@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDownListDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Q26-VP-CNK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WS1-fy-uFK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.2907183918181705" green="0.25514788107972725" blue="0.36367782360406087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ws0-CD-nhL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Select A City">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6jg-gG-Lff"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY6-Ng-HEI">
+                                        <rect key="frame" x="0.0" y="-20" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.9037317576142132" green="0.60576110651445902" blue="0.67386441679489717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="g9g-Gn-5Fs"/>
+                                        </constraints>
+                                        <state key="normal" title="Boston">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08v-cq-HNv"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80b-Vq-1IP">
+                                        <rect key="frame" x="0.0" y="-20" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.9037317576142132" green="0.60576110651445902" blue="0.67386441679489717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dtV-Ym-PZQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Los Angeis">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7Q-CC-oN8"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTB-FB-hMa">
+                                        <rect key="frame" x="0.0" y="-20" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.9037317576142132" green="0.60576110651445902" blue="0.67386441679489717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zgk-Gv-FBj"/>
+                                        </constraints>
+                                        <state key="normal" title="New York City">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ma-GZ-aB2"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH4-wl-wzI">
+                                        <rect key="frame" x="0.0" y="-20" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.9037317576142132" green="0.60576110651445902" blue="0.67386441679489717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4kj-uJ-Ri2"/>
+                                        </constraints>
+                                        <state key="normal" title="San Francisco">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQm-NZ-dGx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wH4-wl-wzI" firstAttribute="leading" secondItem="Q26-VP-CNK" secondAttribute="leading" id="Cd3-J8-rv4"/>
+                                    <constraint firstItem="WS1-fy-uFK" firstAttribute="leading" secondItem="Q26-VP-CNK" secondAttribute="leading" id="Gki-uG-rub"/>
+                                    <constraint firstAttribute="trailing" secondItem="wH4-wl-wzI" secondAttribute="trailing" id="Jc9-qr-s1Q"/>
+                                    <constraint firstItem="DY6-Ng-HEI" firstAttribute="leading" secondItem="Q26-VP-CNK" secondAttribute="leading" id="KH0-uu-5um"/>
+                                    <constraint firstItem="LTB-FB-hMa" firstAttribute="leading" secondItem="Q26-VP-CNK" secondAttribute="leading" id="O2A-CQ-50t"/>
+                                    <constraint firstAttribute="trailing" secondItem="WS1-fy-uFK" secondAttribute="trailing" id="a37-Br-05I"/>
+                                    <constraint firstAttribute="trailing" secondItem="DY6-Ng-HEI" secondAttribute="trailing" id="al7-fb-GkI"/>
+                                    <constraint firstAttribute="trailing" secondItem="LTB-FB-hMa" secondAttribute="trailing" id="kYf-OO-Yaw"/>
+                                    <constraint firstItem="80b-Vq-1IP" firstAttribute="leading" secondItem="Q26-VP-CNK" secondAttribute="leading" id="xlx-6o-3JC"/>
+                                    <constraint firstAttribute="trailing" secondItem="80b-Vq-1IP" secondAttribute="trailing" id="yZO-Dg-eH5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q26-VP-CNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5uS-wZ-qEQ"/>
+                            <constraint firstItem="Q26-VP-CNK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VwK-tH-qn9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q26-VP-CNK" secondAttribute="trailing" id="bHj-o7-Oqn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="cityButtons" destination="DY6-Ng-HEI" collectionClass="NSMutableArray" id="mtI-AZ-tv2"/>
+                        <outletCollection property="cityButtons" destination="80b-Vq-1IP" collectionClass="NSMutableArray" id="4ph-Cp-9QQ"/>
+                        <outletCollection property="cityButtons" destination="LTB-FB-hMa" collectionClass="NSMutableArray" id="7hJ-38-H3u"/>
+                        <outletCollection property="cityButtons" destination="wH4-wl-wzI" collectionClass="NSMutableArray" id="EFx-GQ-QUF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
